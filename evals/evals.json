@@ -1,0 +1,23 @@
+{
+  "skill_name": "gitMP",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Execute the /gitMP skill workflow on the project at /Users/kai/Claude/.claude/skills/gitMP-workspace/test-fixtures/fixture-1. This is a fresh project without any git repository. For interactive prompts, simulate these user choices: when asked for commit notes, respond '项目初始化完成'. When asked about next action, choose '结束' (done). The skill path is /Users/kai/Claude/.claude/skills/gitMP/SKILL.md. Read the skill file first, then follow its instructions step by step working in the fixture-1 directory.",
+      "expected_output": "Git repo initialized in fixture-1, .gitignore created, initial commit made with user's note and AI-generated work summary.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Execute the /gitMP skill workflow on the project at /Users/kai/Claude/.claude/skills/gitMP-workspace/test-fixtures/fixture-2. This project already has a git repository with an initial commit, plus some uncommitted changes (Login.tsx, Dashboard.tsx, updated todo.md). For interactive prompts, simulate these user choices: when asked for commit notes, respond '完成了用户登录页面和Dashboard组件开发'. When asked about next action, choose '结束' (done). The skill path is /Users/kai/Claude/.claude/skills/gitMP/SKILL.md. Read the skill file first, then follow its instructions step by step working in the fixture-2 directory.",
+      "expected_output": "Uncommitted changes staged and committed with user's note and AI-generated work summary covering the login page and dashboard work.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Execute the /gitMP skill workflow on the project at /Users/kai/Claude/.claude/skills/gitMP-workspace/test-fixtures/fixture-3. This project already has a git repository with 3 commits. For interactive prompts, simulate these user choices: when asked for commit notes (Step 2), respond '日常存档' (working tree should be clean so nothing to commit). When asked about next action (Step 3), choose '版本回退' (rollback). When asked which commit to rollback to, choose the SECOND commit (the middle one: 'feat: 内容上传模块'). Confirm the rollback when asked. The skill path is /Users/kai/Claude/.claude/skills/gitMP/SKILL.md. Read the skill file first, then follow its instructions step by step working in the fixture-3 directory.",
+      "expected_output": "Git log displayed, user selects second commit, reset --hard executed to revert to the content upload module commit, discarding the buggy review module commit.",
+      "files": []
+    }
+  ]
+}
