@@ -13,3 +13,7 @@ Step 3 两条路径：
 版本回退 → 展示 commit 列表 → 用户选择目标 → 显示将丢失的改动 → 确认后 git reset --hard
 版本迭代 → 输入 GitHub URL → 自动配 remote → git push
 核心设计： 回档前强制展示 git diff --stat，用户确认后才执行，防止误操作丢失代码。
+
+注意⚠️：
+关于Push to GitHub，需要用户配置 gh CLI，在github-setting-Developer Settings中生成一个token（repo编辑权限打开）。
+终端运行gh auth login：选 GitHub.com → HTTPS → GitHub账号 + "Paste an authentication token"，粘贴新 token。即可✅
