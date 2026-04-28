@@ -1,3 +1,5 @@
+<img width="640" height="400" alt="image" src="https://github.com/user-attachments/assets/66ab7eae-5627-4371-979e-1b678df16a07" />
+
 欢迎使用gitMP～这是一个辅助项目版本管理和项目上推迭代的skill🤖
 
 触发方式： /git-mp，或提及"存档""回退版本""推送到GitHub""初始化git"等
