@@ -1,6 +1,6 @@
 <div align="center">
 
-![gitMP](https://github.com/user-attachments/assets/0b9f1e73-15a5-4587-9a74-e29f3a4d7e0c)
+![gitMP](./gitMP.png)
 
 # 🚀 gitMP - Git版本管理助手
 
@@ -12,7 +12,7 @@
 
 ## 📋 简介
 
-gitMP 是一个AI辅助的Git版本管理工具，帮助你轻松完成项目的版本控制、归档和迭代。通过三步工作流，自动生成提交总结，支持版本回退和一键推送到GitHub。
+gitMP 是一个AI辅助的Git版本管理工具，帮助你轻松完成项目的版本控制、归档和迭代。通过三步工作流，自动生成提交总结，支持版本回退和一键推送到[...]
 
 ### 🎯 核心特性
 
